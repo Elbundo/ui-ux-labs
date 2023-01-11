@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+html, body {
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  /* background-color: #231d4b; */
+  background-color: #170f34;
+}
+
+.main_wrapper {
+  width: 1000px;
+  height: 800px;
+  background-color: #8a86ff;
+  background-image: linear-gradient(90deg, rgb(138, 134, 255) 0.04%, rgb(255, 60, 189) 99.5%);
+  padding: 1px;
+  border-radius: 15px;
+}
+
+header {
+  height: 100px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* background-color: #170f34; */
+  background-color: #231d4b;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.main_content {
+  height: 700px;
+  background-color: #2d2755;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #5323b4; */
+  background-color: #8a86ff;
+  border-radius: 8px;
+  color: #fff;
+  font-family: Poppins,ui-sans-serif,system-ui;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.main_btn:hover {
+  background-color: #9321ad;
+}
+.main_btn:active {
+  background-color: #711a85;
+}
+
+.main_text {
+  font-size: 100px;
+}
+
+.count {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 200px;
+}
+
+.main_btn.active {
+  background-color: #a324c0;
+}
+
+.counter_buttons {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+}
+
+.counter_wrapper {
+  background-color: #8a86ff;
+  background-image: linear-gradient(90deg, rgb(138, 134, 255) 0.04%, rgb(255, 60, 189) 99.5%);
+  padding: 1px;
+  border-radius: 50%;
+}
+
+.counter_btn {
+  background-color: #231d4b;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.counter_btn:hover {
+  background-color: #9321ad;
+  cursor: pointer;
+}
+.counter_btn:active {
+  background-color: #711a85;
+  cursor: pointer;
+}
+
+.minus {
+  width: 100px;
+	height: 20px;
+	background: white;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.plus {
+  width: 20px;
+	height: 100px;
+	background: white;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
